@@ -8,6 +8,7 @@ runs:
   - name: Echo whatever
     env:
       whatever: ${{ inputs.whatever }}
+    shell: bash
     run: |
       echo "The value of whatever is $whatever"
       echo whatever=$whatever >> $GITHUB_ENV
