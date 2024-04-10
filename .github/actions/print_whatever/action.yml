@@ -5,4 +5,7 @@ runs:
   using: composite
   steps:
 
-  - run: echo ${{ whatever }}
+  - run: |
+    echo ${{ whatever }}
+    echo whatever=$whatever >> $GITHUB_ENV
+    echo "Now $whatever is also part of your env"
