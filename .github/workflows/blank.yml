@@ -41,5 +41,5 @@ jobs:
         with:
           whatever: Juansi
 
-      - name: Show me whatever
-        run: echo "Esto es whatever: $whatever"
+      - run: |
+          echo "Esto es whatever: $whatever"
