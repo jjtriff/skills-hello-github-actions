@@ -1,4 +1,4 @@
-input:
+inputs:
   whatever:
     required: true
 runs:
