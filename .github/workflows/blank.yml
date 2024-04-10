@@ -36,3 +36,9 @@ jobs:
         run: |
           echo Add other actions to $n,
           echo test, and deploy your project.
+
+      - uses: ./.github/actions/print_whatever
+        with:
+          whatever: Juansi
+
+      - run: echo "Esto es whatever: $whatever"
