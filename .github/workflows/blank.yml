@@ -26,11 +26,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Running with skip=${{ string(inputs.skip) }}
+      - name: Running with ...
         env:
           skip: ${{ inputs.skip }}
-        run: 
-          echo $skip
+        run: |
+          echo Skip is $skip
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
