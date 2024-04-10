@@ -5,7 +5,10 @@ runs:
   using: composite
   steps:
 
-  - run: |
-      echo ${{ whatever }}
+  - name: Echo whatever
+    env:
+      whatever: ${{ inputs.whatever }}
+    run: |
+      echo "The value of whatever is $whatever"
       echo whatever=$whatever >> $GITHUB_ENV
       echo "Now $whatever is also part of your env"
